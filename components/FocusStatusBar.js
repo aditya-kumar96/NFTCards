@@ -3,6 +3,7 @@ import {useIsFocused} from '@react-navigation/core'
 
 const FocusStatusBar = (props) => {
   const isFocused = useIsFocused();
+  console.log('isfouced',isFocused)
     return isFocused ? <StatusBar animated={true} {...props} /> : null;
 }
 

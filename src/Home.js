@@ -8,7 +8,7 @@ const Home = () => {
 
     return (
         <SafeAreaView style={{ flex: 1 }}>
-            <FocusStatusBar background={COLORS.primary} />
+            <FocusStatusBar backgroundColor={COLORS.primary} />
             <View style={styles.container}>
 
                 <View style={{ zIndex: 0 }}>
@@ -29,8 +29,8 @@ const Home = () => {
                     right: 0,
                     zIndex: -1,
                 }} >
-                <View style={{ height: 300, backgroundColor: COLORS.primary }} />
-                <View style={{ flex: 1, backgroundColor: COLORS.white }} />
+                    <View style={{ height: 300, backgroundColor: COLORS.primary }} />
+                    <View style={{ flex: 1, backgroundColor: COLORS.white }} />
                 </View>
             </View>
         </SafeAreaView>
