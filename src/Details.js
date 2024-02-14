@@ -1,14 +1,25 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View ,SafeAreaView,Image,StatusBar,FlatList } from 'react-native'
 import React from 'react'
+import { SHADOWS,FONTS,COLORS,SIZES,assets } from '../constants';
+import { CircleButton,RectButton,SubInfo,FocusStatusBar,DetailsDesc,DetailsBid } from '../components';
 
-const Details = () => {
+const Details = ({route,navigation}) => {
+  const {data} = route?.params;
+  console.log(`------------------------------- -----------------`)
+               console.log(data);    
+  console.log(`-------------------------------------------------------------`);
   return (
-    <View>
+    <SafeAreaView style={{flex:1}}>
+      <FocusStatusBar
+        barStyle="dark-content"
+        backgroundColor="transparent"
+        translucent={true}
+      />
       <Text>Details</Text>
-    </View>
+    </SafeAreaView>
   )
 }
 
 export default Details
 
-const styles = StyleSheet.create({})
+
